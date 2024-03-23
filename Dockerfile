@@ -1,7 +1,1 @@
-FROM python:3.12
-RUN pip install poetry
-COPY . /src
-WORKDIR /src
-RUN poetry install
-EXPOSE 8501
-ENTRYPOINT ["poetry","run", "streamlit", "run", "exemplo_02.py", "--server.port=8501", "--server.address=0.0.0.0"]
+FROM quay.io/astronomer/astro-runtime:10.5.0
