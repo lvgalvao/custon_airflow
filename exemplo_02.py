@@ -11,7 +11,8 @@ def load_data():
 
 # Função para executar o script Python
 def run_python_script():
-    subprocess.run(["cmd", "/k", "poetry shell", "&&", "streamlit", "run", "exemplo_01.py"])
+    # subprocess.run(["cmd", "/k", "poetry shell", "&&", "streamlit", "run", "exemplo_01.py"])
+    subprocess.run(["sh", "-c", "poetry shell && streamlit run exemplo_01.py"])
 
 
 # Layout do aplicativo Streamlit
